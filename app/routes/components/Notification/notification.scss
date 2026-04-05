@@ -1,0 +1,87 @@
+.notification {
+  .notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10px;
+  }
+
+  .noti {
+    margin-top: 15px;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .grp1 {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+
+    .icon-bg {
+      width: 25px;
+      height: 25px;
+      background: #edeefc;
+      border-radius: 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-bg2 {
+      width: 25px;
+      height: 25px;
+      background: #e6f1fd;
+      border-radius: 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .activities {
+    position: relative;
+  }
+
+  .line-vertical {
+    position: absolute;
+
+    top: 60px;
+    left: 42px;
+
+    width: 2px;
+    height: calc(100% - 80px);
+    margin-left: 5.5px;
+
+    background: #e0e0e0;
+  }
+
+  .image1 {
+    height: 17px;
+    width: 17px;
+  }
+
+  .grp2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3px;
+  }
+
+  .bug {
+    font-size: 12px;
+  }
+  .opacity {
+    font-size: 10px;
+    opacity: 0.5;
+  }
+
+  .activities {
+    transform: translateY(13px);
+  }
+  .contacts {
+    transform: translateY(18px);
+  }
+}

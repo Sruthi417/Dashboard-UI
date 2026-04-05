@@ -1,10 +1,10 @@
 .burger {
   display: none; /* Hidden on desktop */
   position: fixed;
-  top: 18px;
+  top: 22px;
   left: 16px;
   z-index: 1100;
-  width: 14px;
+  width: 18px;
   height: 14px;
   background: transparent;
   border: none;
@@ -15,7 +15,7 @@
 .burger span {
   display: block;
   position: absolute;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: #1c1c1c;
   border-radius: 9px;
@@ -61,22 +61,15 @@
 @media (max-width: 1100px) {
   .burger {
     display: block;
-    height: 14px;
-    width: 14px;
-    top:22px;
   }
 }
 
-/* Scale burger down on very small screens */
+/* Scale burger down slightly on very small screens */
 @media (max-width: 480px) {
   .burger {
-    width: 15px;
-    height: 10px;
-    top: 25px;
+    width: 16px;
+    height: 12px;
+    top: 24px;
     left: 12px;
-  }
-
-  .burger span {
-    height: 2.5px;
   }
 }

@@ -90,17 +90,17 @@ const Notification = () => {
         <div className="grp1">
           <img src="./images/avatar.png" className="image1" />
 
-          <span className="bug">Aadhi</span>
+          <span className="bug">Miya</span>
         </div>
         <div className="grp1">
           <img src="./images/avatar.png" className="image1" />
 
-          <span className="bug">Abhi</span>
+          <span className="bug">Rose</span>
         </div>
         <div className="grp1">
           <img src="./images/avatar.png" className="image1" />
 
-          <span className="bug">Jinsha</span>
+          <span className="bug">Cristopher</span>
           </div>
         </div>
       </div>

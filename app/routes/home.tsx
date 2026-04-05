@@ -2,6 +2,7 @@ import type { Route } from "./+types/home";
 import Sidebar from "./components/sidebar/Sidebar";
 import Main from "./components/main/main";
 import Notification from "./components/Notification/notification";
+import { useState } from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,11 +12,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <main className="main-layout">
-      <Sidebar />
+      <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
 
-      <Main />
+      <Main sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
       <Notification />
     </main>

@@ -1,0 +1,82 @@
+.burger {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  top: 18px;
+  left: 16px;
+  z-index: 1100;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #1c1c1c;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger span:nth-of-type(3) {
+  bottom: 0;
+  top: auto;
+}
+
+/* Active / open state — transforms into an X */
+.burger.active span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 50%;
+  transform-origin: center;
+}
+
+.burger.active span:nth-of-type(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.burger.active span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 50%;
+  transform-origin: center;
+}
+
+/* Show burger when sidebar hides (≤1100px) */
+@media (max-width: 1100px) {
+  .burger {
+    display: block;
+    height: 14px;
+    width: 14px;
+    top:22px;
+  }
+}
+
+/* Scale burger down on very small screens */
+@media (max-width: 480px) {
+  .burger {
+    width: 15px;
+    height: 10px;
+    top: 25px;
+    left: 12px;
+  }
+
+  .burger span {
+    height: 2.5px;
+  }
+}
